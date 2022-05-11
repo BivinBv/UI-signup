@@ -9,38 +9,53 @@
 </head>
 <body id="signuppage">
 
- 
 <div class="container-fluid mt-3">											<!-- Main container open-->
   <div class="row">                                                         <!-- !st row open -->
     <div class="col-sm-3 p-3 text-white"></div>                  <!-- Grid 1 -->
-    <div class="col-sm-6 p-3 text-white"> 							<!-- Grid 2 -->
+    <div class="col-sm-6 p-0 text-white"> 							<!-- Grid 2 -->
     
 	    <div class="container mt-4 cardcontainer">										<!-- container inside grid -->
-	         <div class="card">												<!-- card open -->	
-	    		<div class="card-header text-black"><b>Login to your account</b></div>
+	         <div class="card" id="signupcard">												<!-- card open -->	
+	    		<div class="card-header text-black"><b>Register your account</b></div>
 	   			 <div class="card-body">
 	   			 
-	       <form action="/action_page.php">								<!--login form inside card -->
+	       <form action="signupaction.jsp" method="post">								<!--login form inside card -->
    		   	 <div class="mb-4 mt-3">
-      		    <label for="uname" class="label text-black">Username:</label>
-     		    <input type="text" class="form-control" id="username" placeholder="Enter Username" name="uname">
+      		    <label for="fname" class="label text-black">First Name:</label>
+     		    <input type="text" class="form-control" id="fname" placeholder="Enter Firstname" name="fname">
             </div>
             <div class="mb-3">
-      			<label for="pass" class="label text-black">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass">
+      			<label for="lname" class="label text-black">Last Name:</label>
+                <input type="text" class="form-control" id="lname" placeholder="Enter Lastname" name="lname">
            </div>
-              <button type="submit" class="btn btn-success loginbtn">Login</button>
+            <div class="mb-3">
+      			<label for="email" class="label text-black">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email-ID" name="email">
+           </div>
+           <div class="mb-3">
+      			<label for="mobile" class="label text-black">Mobile Number:</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Mobile-Number" name="mobile">
+           </div>
+            <div class="mb-3">
+      			<label for="uname" class="label text-black">Username:</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter User-name" name="uname">
+           </div>
+           <div class="mb-3">
+      			<label for="pass" class="label text-black">Password:</label>
+                <input type="password" class="form-control" id="pass" placeholder="Enter Password" name="pass">
+           </div>
+              <button type="submit" class="btn btn-success loginbtn">Sign Up</button>
   		  </form>
 	   			 </div> 
 	   			 
 	   			 <div class="card-footer">								<!-- Footer of card -->
 		   			 <div class="row" >									<!-- grid system inside footer -->
 		   			  <div class="col-sm-3 p-1 text-white"></div>
-		   			 	 <div class="col-sm-3 p-0 text-white">  
-			   			 <p class="text-black newuser">New user?</p>
+		   			 	 <div class="col-sm-4 p-0 text-white">  
+			   			 <p class="text-black alreadyhave">Already have an account?</p>
 			   			 </div>
-			   			 <div class="col-sm-6 p-0 text-white">  
-			   			 <a href="#" class="btn btn-info signup">Sign up</a>
+			   			 <div class="col-sm-5 p-0 text-white">  
+			   			 <a href="#" >Sign in</a>
 			   			 </div>
 			   			 
 		   			 </div>

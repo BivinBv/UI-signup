@@ -28,4 +28,21 @@
 {
 	height:10px;
 }
-                                     <!--signup-->
+                                    
+                                       /*sign up page css*/                             
+#signuppage
+{
+	background-image:url("images/pexels-simon-berger-1323550.jpg"); 
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+#signupcard
+{
+	margin-top:-6px;
+}
+
+.alreadyhave
+{
+	
+}
