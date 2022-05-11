@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+										
+#loginpage
+{
+	background-image:url("images/pexels-simon-berger-1323550.jpg"); 
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.loginbtn
+{
+	margin-left:42%; 
+	margin-right:40%; 
+}
+.card
+{
+	margin-top:15%; 
+}
+
+.newuser
+{
+	margin-left:17%;
+}
+.signup
+{
+	margin-right:20%;
+}
+.rowfooter
+{
+	height:10px;
+}
+                                     <!--signup-->
