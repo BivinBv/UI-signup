@@ -33,18 +33,30 @@ while(rs.next())
 	String mobile=rs.getString("mobilenumber");
 	String email=rs.getString("email");
 
-	out.println("<h3>Name: </h3>"+fname+" "+lname);
-	out.println("<h3>Username: </h3>"+uname);
-	out.println("<h3>Mobile Number: </h3>"+mobile);
-	out.println("<h3>Email: </h3>"+email);
+
 	%>
-	
+	<div class="container-fluid mt-3">
+	  <div class="row">
+    <div class="col-sm-3 "></div>
+    <div class="col-sm-6 text-black">
+    <div class="card text-black">
+    <div class="card-header bg-info"><b>Personal Details</b></div>
+    <div class="card-body" >
+    	 <p><b>Name        :</b> <%=fname+" "+lname %></p>
+    	 <p><b>Username    :</b> <%=uname %></p>
+    	 <p><b>Mobile Number  :</b> <%=mobile %></p>
+    	 <p><b>Email-ID    :</b> <%=email%></p>
+   
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-3 "></div>
+  </div>
+	</div>
 	
 <% 	
 }
 
-
-	
 }catch(Exception e)
 {
 	
