@@ -3,9 +3,16 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Sign up</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <link rel="stylesheet" href="style.css">
+<script src="signup.js"></script>
 </head>
 <body id="signuppage">
 
@@ -15,36 +22,42 @@
     <div class="col-sm-6 p-0 text-white"> 							<!-- Grid 2 -->
     
 	    <div class="container mt-4 cardcontainer">										<!-- container inside grid -->
-	         <div class="card" id="signupcard">												<!-- card open -->	
+	         <div class="card signupcard" id="signupcard" style="box-shadow: 5px 3px 18px gray">												<!-- card open -->	
 	    		<div class="card-header text-black"><b>Register your account</b></div>
 	   			 <div class="card-body">
 	   			 
-	       <form action="signupaction.jsp" method="post">								<!--login form inside card -->
+	       <form action="signupaction.jsp" method="post" class="form">								<!--login form inside card -->
    		   	 <div class="mb-4 mt-3">
       		    <label for="fname" class="label text-black">First Name:</label>
-     		    <input type="text" class="form-control" id="fname" placeholder="Enter Firstname" name="fname">
+     		    <input type="text" class="form-control" id="fname" placeholder="Enter Firstname" name="fname" autocomplete="off" required>
+     		    <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="mb-3">
       			<label for="lname" class="label text-black">Last Name:</label>
-                <input type="text" class="form-control" id="lname" placeholder="Enter Lastname" name="lname">
+                <input type="text" class="form-control" id="lname" placeholder="Enter Lastname" name="lname" autocomplete="off" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
            </div>
             <div class="mb-3">
       			<label for="email" class="label text-black">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter Email-ID" name="email">
+                <input type="email" class="form-control" id="email" placeholder="Enter Email-ID" name="email" autocomplete="off" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
            </div>
            <div class="mb-3">
       			<label for="mobile" class="label text-black">Mobile Number:</label>
-                <input type="text" class="form-control" id="email" placeholder="Enter Mobile-Number" name="mobile">
+                <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile-Number" name="mobile" autocomplete="off" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
            </div>
             <div class="mb-3">
       			<label for="uname" class="label text-black">Username:</label>
-                <input type="text" class="form-control" id="username" placeholder="Enter User-name" name="uname">
+                <input type="text" class="form-control" id="username" placeholder="Enter User-name" name="uname" autocomplete="off" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
            </div>
            <div class="mb-3">
       			<label for="pass" class="label text-black">Password:</label>
-                <input type="password" class="form-control" id="pass" placeholder="Enter Password" name="pass">
+                <input type="password" class="form-control" id="pass" placeholder="Enter Password" name="pass" autocomplete="off" required>
+                <div class="invalid-feedback">Please fill out this field.</div>
            </div>
-              <button type="submit" class="btn btn-success loginbtn">Sign Up</button>
+              <button type="submit" class="btn btn-success loginbtn" id="signup">Sign Up</button>
   		  </form>
 	   			 </div> 
 	   			 
@@ -70,10 +83,6 @@
   </div>
   
 </div>																	<!-- main container close -->
-
-
-
-
 
 </body>
 </html>
