@@ -8,7 +8,7 @@
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   
@@ -30,15 +30,15 @@
 	       <form action="loginaction.jsp" method="post" class="formlogin">								<!--login form inside card -->
    		   	 <div class="mb-4 mt-3">
       		    <label for="uname" class="label text-black">Username:</label>
-     		    <input type="text" class="form-control" id="username" placeholder="Enter Username" name="uname" required>
+     		    <input type="text" class="form-control" id="username" placeholder="Enter Username" name="uname" autocomplete="off" required>
      		    <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="mb-3">
       			<label for="pass" class="label text-black">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass" required>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass" autocomplete="off" required>
                 <div class="invalid-feedback">Please fill out this field.</div>
            </div>
-              <button type="submit" class="btn btn-success loginbtn" id="loginbtn">Login</button>
+              <button type="submit" class="btn btn-success loginbtn" id="loginbtn"><b>Login</b></button>
   		  </form>
 	   			 </div> 
 	   			 

@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+.close
+{
+	margin-left:420px;
+	font-size:xx-large; 
+	color:black;
+}
+.card-header
+{
+	font-size:large;
+}

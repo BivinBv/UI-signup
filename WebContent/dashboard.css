@@ -11,3 +11,16 @@
 	font-size:large; 
 
 }    
+.dashbody
+{
+	background-color:#E8E8E8; 
+}
+.content
+{
+	height:500px;
+}
+.nav-link
+{
+	color:black;
+	font-size:large;  
+}

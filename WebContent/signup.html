@@ -10,6 +10,10 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 
 <link rel="stylesheet" href="style.css">
 <script src="signup.js"></script>
@@ -44,8 +48,10 @@
            </div>
            <div class="mb-3">
       			<label for="mobile" class="label text-black">Mobile Number:</label>
-                <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile-Number" name="mobile" autocomplete="off" required>
+                <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile-Number" name="mobile" autocomplete="off" required pattern="[6-9]\d{9}" title="Enter a valid number">
                 <div class="invalid-feedback">Please fill out this field.</div>
+                
+                
            </div>
             <div class="mb-3">
       			<label for="uname" class="label text-black">Username:</label>
@@ -57,7 +63,17 @@
                 <input type="password" class="form-control" id="pass" placeholder="Enter Password" name="pass" autocomplete="off" required>
                 <div class="invalid-feedback">Please fill out this field.</div>
            </div>
-              <button type="submit" class="btn btn-success loginbtn" id="signup">Sign Up</button>
+              
+              
+              <div class="row" >									<!-- grid system inside footer -->
+		   			  <div class="col-sm-3 p-1 text-white"></div>
+		   			 	 <div class="col-sm-4 p-0 text-white">  
+			   		  <button type="reset" class="btn btn-danger" id="reset"><b>reset</b></button>
+			   			 </div>
+			   			 <div class="col-sm-5 p-0 text-white">  
+			   			 <button type="submit" onclick="validate()" class="btn btn-success loginbtn" id="signup" style="margin-left:-10px"><b>Sign Up</b></button>
+			   			 </div>
+			   			 </div>
   		  </form>
 	   			 </div> 
 	   			 
@@ -82,7 +98,10 @@
     <div class="col-sm-3 p-3 text-white"></div>								<!-- grid 3 in main container -->
   </div>
   
-</div>																	<!-- main container close -->
+</div>		
+<script>
+
+</script>															<!-- main container close -->
 
 </body>
 </html>
