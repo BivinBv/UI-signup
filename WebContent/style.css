@@ -2,7 +2,7 @@
 										
 #loginpage
 {
-	background-image:url("images/pexels-simon-berger-1323550.jpg"); 
+	background-image:url("images/blur2.jpg"); 
 	background-repeat:no-repeat;
 	background-size: cover;
 }
@@ -29,7 +29,7 @@
                                        /*sign up page css*/                             
 #signuppage
 {
-	background-image:url("images/pexels-simon-berger-1323550.jpg"); 
+	background-image:url("images/blur2.jpg"); 
 	background-repeat:no-repeat;
 	background-size: cover;
 }
@@ -40,6 +40,10 @@
 	 box-shadow: 5px 10px 18px red;
 }
 
+input
+{
+	style="background-color: rgba(0,0,0,.5)"
+}
 
 
                                      

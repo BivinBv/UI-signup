@@ -29,11 +29,12 @@ try
 			response.sendRedirect("dashboard.html");
 		}	
 		else
-			response.sendRedirect("error.html");
+			response.sendRedirect("loginfailed.html");
 	}
 	while(!rs.next())
 	{
-		response.sendRedirect("error.html");
+		request.setAttribute("error","Incorrect username or password");
+		response.sendRedirect("loginfailed.html");
 	}
 	
 }catch(Exception e)

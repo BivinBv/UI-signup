@@ -23,30 +23,31 @@
     <div class="col-sm-6 p-3 text-white"> 							<!-- Grid 2 -->
     
 	    <div class="container mt-4 cardcontainer">										<!-- container inside grid -->
-	         <div class="card logincard" style="box-shadow: 5px 3px 18px gray">												<!-- card open -->	
-	    		<div class="card-header text-black"><b>Login to your account</b></div>
+	         <div class="card logincard" style="box-shadow: 1px 1px 12px gray ;background-color: rgba(0,0,0,.6);
+    color: #fff;">												<!-- card open -->	
+	    		<div class="card-header text-white" style="background-color: rgba(0,0,0,.5)"><b>Login to your account</b></div>
 	   			 <div class="card-body">
 	   			 
 	       <form action="loginaction.jsp" method="post" class="formlogin">								<!--login form inside card -->
    		   	 <div class="mb-4 mt-3">
-      		    <label for="uname" class="label text-black">Username:</label>
-     		    <input type="text" class="form-control" id="username" placeholder="Enter Username" name="uname" autocomplete="off" required>
+      		    <label for="uname" class="label text-white">Username:</label>
+     		    <input type="text" style="background-color: rgba(0,0,0,.4)" class="form-control text-white" id="username" placeholder="Enter Username" name="uname" autocomplete="off" required>
      		    <div class="invalid-feedback">Please fill out this field.</div>
             </div>
             <div class="mb-3">
-      			<label for="pass" class="label text-black">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pass" autocomplete="off" required>
+      			<label for="pass" class="label text-white">Password:</label>
+                <input type="password" style="background-color: rgba(0,0,0,.4)" class="form-control text-white" id="pwd" placeholder="Enter password" name="pass" autocomplete="off" required>
                 <div class="invalid-feedback">Please fill out this field.</div>
            </div>
               <button type="submit" class="btn btn-success loginbtn" id="loginbtn"><b>Login</b></button>
   		  </form>
 	   			 </div> 
 	   			 
-	   			 <div class="card-footer">								<!-- Footer of card -->
+	   			 <div class="card-footer" style="background-color: rgba(0,0,0,.5)">								<!-- Footer of card -->
 		   			 <div class="row" >									<!-- grid system inside footer -->
 		   			  <div class="col-sm-3 p-1 text-white"></div>
 		   			 	 <div class="col-sm-3 p-0 text-white">  
-			   			 <p class="text-black newuser">New user?</p>
+			   			 <p class="text-white newuser">New user?</p>
 			   			 </div>
 			   			 <div class="col-sm-6 p-0 text-white">  
 			   			 <a href="signup.html" class="btn btn-info signup">Sign up</a>
@@ -58,7 +59,6 @@
 	  		</div>															<!-- card close -->
 	    </div>
     	
-    
     </div>
     <div class="col-sm-3 p-3 text-white"></div>								<!-- grid 3 in main container -->
   </div>
