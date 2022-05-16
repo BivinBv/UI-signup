@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +24,7 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li >
-          <a id="dashboard">DashBoard</a>
+          <a id="dashboard">Seller</a>
         </li>
         <li class="nav-item">
         
@@ -49,7 +51,7 @@
      					   <a class="nav-link" href="#"><i class="bi bi-inbox"> </i>Inbox</a>
     				    </li>
      					 <li class="nav-item">
-    				       <a class="nav-link" href="#"><i class="bi bi-people-fill"> </i>My Team</a>
+    				       <a class="nav-link" href="#"><i class="bi bi-people-fill"> </i>My Customers</a>
      				    </li>
                         <li class="nav-item">
       					   <a class="nav-link" href="#"><i class="bi bi-gear-fill"> </i>Settings</a>

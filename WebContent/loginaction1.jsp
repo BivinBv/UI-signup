@@ -10,7 +10,7 @@ String pass=request.getParameter("pass");
 try
 {
 	
-	String query="select logincredentials.userid,logincredentials.username,logincredentials.password,usertype.utype,usertype.id from "+
+	String query="select logincredentials.userid,logincredentials.username,logincredentials.password,usertype.utype from "+
 	"((user inner join logincredentials on user.id=logincredentials.userid)"+
 			"inner join usertype on usertype.id=user.usertype_id)"+
 	"where username=? and password=?";
@@ -22,33 +22,23 @@ try
 	
 	while(rs.next())
 	{
-		
 		String usern=rs.getString("username");
 		String pswd=rs.getString("password");
-		String utype=rs.getString("utype");
-		int utype_id=rs.getInt("id");
 		int userid=rs.getInt("userid");
 		session.setAttribute("userid", userid);
 		session.setAttribute("username", usern);
-		session.setAttribute("typeid", utype_id);
-	
-		
+		String utype=rs.getString("utype");
 		
 		if((uname.equals(usern))&&(pass.equals(pswd)))
 		{
 			if((utype).equals("customer"))
 			{
-			response.sendRedirect("customerdash.html");
-			}
-			if((utype).equals("seller"))
-			{
-				response.sendRedirect("sellerdash.jsp");
+			response.sendRedirect("dashboard.html");
 			}
 			else
 			{
-				response.sendRedirect("error.jsp");
+				response.sendRedirect("admin.jsp");
 			}
-				
 		}	
 		else
 			response.sendRedirect("loginfailed.html");
