@@ -22,10 +22,11 @@ Object Id=session.getAttribute("userid");
 Object uname=session.getAttribute("username");
 int id=(int)Id;
 String query="select * from user where id=?";
+
 Connection con=Connect.getconnection();
 PreparedStatement ps=con.prepareStatement(query);
-ps.setInt(1, id);
-ResultSet rs=ps.executeQuery();
+	ps.setInt(1, id);
+	ResultSet rs=ps.executeQuery();
 
 while(rs.next())
 {
@@ -33,6 +34,9 @@ while(rs.next())
 	String lname=rs.getString("lastname");
 	String mobile=rs.getString("mobilenumber");
 	String email=rs.getString("email");
+	Object type=session.getAttribute("utype");
+	
+	
 
 
 	%>
@@ -47,8 +51,7 @@ while(rs.next())
     	 <p><b>Name        :</b> <%=fname+" "+lname %></p>
     	 <p><b>Username    :</b> <%=uname %></p>
     	 <p><b>Mobile Number  :</b> <%=mobile %></p>
-    	 <p><b>Email-ID    :</b> <%=email%></p>
-   
+    	 <p><b>Email-ID    :</b> <%=email%></p>   
     </div>
   </div>
     </div>

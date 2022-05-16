@@ -24,11 +24,11 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li >
-          <a id="dashboard">Seller</a>
+          <a id="dashboard"><i class="bi bi-cart3"> </i>E-Cart</a>
         </li>
         <li class="nav-item">
         
-          <a class="nav-link profilebtn" href="profile.jsp"><i class="bi bi-person-fill" > </i>Profile</a>
+          <a class="nav-link profilebtn" href="profile.jsp"><i class="bi bi-person-fill" > </i>Seller Profile</a>
         </li>
       </ul>
       <form class="d-flex">
