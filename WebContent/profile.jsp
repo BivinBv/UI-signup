@@ -30,14 +30,13 @@ PreparedStatement ps=con.prepareStatement(query);
 
 while(rs.next())
 {
+	
 	String fname=rs.getString("firstname");
 	String lname=rs.getString("lastname");
 	String mobile=rs.getString("mobilenumber");
 	String email=rs.getString("email");
 	Object type=session.getAttribute("utype");
 	
-	
-
 
 	%>
 	<div class="container-fluid mt-3">
@@ -46,12 +45,13 @@ while(rs.next())
     <div class="col-sm-6 text-black">
     <div class="card text-black">
     <div class="card-header bg-info"><b>Personal Details</b> 
-    <a href="dashboard.html" class="close" data-dismiss="alert" aria-label="close" >&times;</a></div>
+    <a href="#" class="close" data-dismiss="alert" aria-label="close" >&times;</a></div>
     <div class="card-body" >
     	 <p><b>Name        :</b> <%=fname+" "+lname %></p>
     	 <p><b>Username    :</b> <%=uname %></p>
     	 <p><b>Mobile Number  :</b> <%=mobile %></p>
-    	 <p><b>Email-ID    :</b> <%=email%></p>   
+    	 <p><b>Email-ID    :</b> <%=email%></p>    
+    	     
     </div>
   </div>
     </div>

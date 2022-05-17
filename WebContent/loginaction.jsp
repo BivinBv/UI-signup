@@ -10,7 +10,7 @@ String pass=request.getParameter("pass");
 try
 {
 	
-	String query="select logincredentials.userid,logincredentials.username,logincredentials.password,usertype.utype,usertype.id from "+
+	String query="select user.id,logincredentials.userid,logincredentials.username,logincredentials.password,usertype.utype,usertype.id from "+
 	"((user inner join logincredentials on user.id=logincredentials.userid)"+
 			"inner join usertype on usertype.id=user.usertype_id)"+
 	"where username=? and password=?";
@@ -22,7 +22,7 @@ try
 	
 	while(rs.next())
 	{
-		
+		int id=rs.getInt("id");
 		String usern=rs.getString("username");
 		String pswd=rs.getString("password");
 		String utype=rs.getString("utype");
@@ -31,6 +31,7 @@ try
 		session.setAttribute("userid", userid);
 		session.setAttribute("username", usern);
 		session.setAttribute("typeid", utype_id);
+		session.setAttribute("mainid", id);
 	
 		
 		

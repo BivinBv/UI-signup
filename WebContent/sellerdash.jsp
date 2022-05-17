@@ -50,6 +50,12 @@
  					     <li class="nav-item">
      					   <a class="nav-link" href="#"><i class="bi bi-inbox"> </i>Inbox</a>
     				    </li>
+    				      <li class="nav-item">
+      					   <a class="nav-link" href="addproducts.jsp"><i class="bi bi-bag-plus-fill"> </i>Add Products</a>
+                        </li>
+                        <li class="nav-item">
+      					   <a class="nav-link" href="viewproducts.jsp"><i class="bi bi-view-list"> </i>View Products</a>
+                        </li>
      					 <li class="nav-item">
     				       <a class="nav-link" href="#"><i class="bi bi-people-fill"> </i>My Customers</a>
      				    </li>
